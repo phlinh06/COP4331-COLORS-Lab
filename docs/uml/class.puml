@@ -1,0 +1,24 @@
+@startuml
+
+class User {
+  +username: String
+  +password: String
+  +login()
+  +logout()
+}
+
+class Color {
+  +name: String
+  +create()
+
+}
+
+class ColorManager {
+  +addColor()
+  +searchColor()
+}
+
+User --> ColorManager
+ColorManager --> Color
+
+@enduml

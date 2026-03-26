@@ -1,0 +1,20 @@
+@startuml
+start
+
+:User opens system;
+
+:Login;
+:Validate credentials;
+
+if (Action?) then (Search)
+  :Search for color;
+  :View results;
+else (Add)
+  :Input new color;
+  :Store color;
+endif
+
+:Logout;
+
+stop
+@enduml
