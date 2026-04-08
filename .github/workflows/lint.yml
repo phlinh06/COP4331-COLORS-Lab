@@ -20,19 +20,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-	working-directory: ./
 
       - name: Run HTMLHint
         run: npx htmlhint "**/*.html"
-	working-directory: ./
         continue-on-error: true
 
       - name: Run Stylelint
         run: npx stylelint "**/*.css"
-	working-directory: ./
         continue-on-error: true
 
       - name: Run ESLint
         run: npx eslint "**/*.js"
-	working-directory: ./
         continue-on-error: true
